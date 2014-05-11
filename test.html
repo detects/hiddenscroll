@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hidden Scroll</title>
+  </head>
+  <body>
+    <script src="build/index.js"></script>
+    <script>
+      var support = require('./index.js')
+      var p = document.createElement('p')
+      p.textContent = support ? 'yes' : 'no'
+      document.body.appendChild(p)
+    </script>
+    <div id="scroll"></div>
+    <style>
+      #scroll {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+      }
+    </style>
+  </body>
+</html>
